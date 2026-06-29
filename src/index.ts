@@ -1,4 +1,4 @@
-import { createPlugin } from "@pure-auth/core";
+import { createPlugin } from "pure-auth";
 import { ApiKeyService, type ApiKeyServiceOptions } from "./services/api-key-service";
 import { PermissionService } from "./services/permission-service";
 import { ResourceService } from "./services/resource-service";

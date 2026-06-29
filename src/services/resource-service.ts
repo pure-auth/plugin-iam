@@ -1,4 +1,4 @@
-import { badRequest, internal, notFound, type ListOptions } from "@pure-auth/core";
+import { badRequest, internal, notFound, type ListOptions } from "pure-auth";
 import {
   canAccessResource,
   requireResourceAction,

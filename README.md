@@ -8,7 +8,7 @@ This package is intended to live in its own repository:
 
 - GitHub: `pure-auth/plugin-iam`
 - npm: `@pure-auth/plugin-iam`
-- Peer dependencies: `@pure-auth/core`, `@pure-auth/plugin-organization`
+- Peer dependencies: `pure-auth`, `@pure-auth/plugin-organization`
 
 ## Development
 

@@ -1,4 +1,4 @@
-import { forbidden, notFound, type SessionActor } from "@pure-auth/core";
+import { forbidden, notFound, type SessionActor } from "pure-auth";
 import { requireOrganizationMembership } from "@pure-auth/plugin-organization";
 import type { Member } from "@pure-auth/plugin-organization";
 import type { IamPluginStorage } from "./storage";

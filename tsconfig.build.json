@@ -11,7 +11,7 @@
     "outDir": "./dist",
     "paths": {
       "@/*": ["./src/*"],
-      "@pure-auth/core": ["../core/dist/index.d.ts"],
+      "pure-auth": ["../core/dist/index.d.ts"],
       "@pure-auth/plugin-organization": ["../plugin-organization/dist/index.d.ts"]
     },
     "rootDir": "./src",

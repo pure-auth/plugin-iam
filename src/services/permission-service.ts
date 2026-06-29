@@ -4,7 +4,7 @@ import {
   notFound,
   type ListOptions,
   type ServiceContext,
-} from "@pure-auth/core";
+} from "pure-auth";
 import { requireOrganizationMembership } from "@pure-auth/plugin-organization";
 import type { IamPluginStorage, PermissionOrderBy } from "@/storage";
 import type {
@@ -114,7 +114,7 @@ export class PermissionService {
       orderDirection: "asc",
       filter: { organizationId },
     });
-    const roleIds = roles.map((role) => role.id);
+    const roleIds = roles.map((role: Role) => role.id);
 
     if (roleIds.length === 0) {
       return [];

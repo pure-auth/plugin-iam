@@ -7,7 +7,7 @@ import {
   type ActorResolver,
   type HeadersLike,
   type ServiceContext,
-} from "@pure-auth/core";
+} from "pure-auth";
 import { requireOrganizationMembership } from "@pure-auth/plugin-organization";
 import type { IamPluginStorage } from "@/storage";
 import type { ApiKey, ApiKeyActor, CreateApiKeyInput, PublicApiKey } from "@/types";

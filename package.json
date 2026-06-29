@@ -4,7 +4,7 @@
   "types": "./dist/index.d.ts",
   "type": "module",
   "private": false,
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Role, permission, resource, and API-key IAM plugin for Pure Auth.",
   "sideEffects": false,
   "files": [
@@ -37,8 +37,8 @@
     "typescript": "^5.9.3"
   },
   "peerDependencies": {
-    "@pure-auth/core": "^0.1.0",
-    "@pure-auth/plugin-organization": "^0.1.0",
+    "pure-auth": "^0.1.0",
+    "@pure-auth/plugin-organization": "^0.1.1",
     "typescript": "^5"
   }
 }

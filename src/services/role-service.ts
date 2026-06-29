@@ -4,7 +4,7 @@ import {
   notFound,
   type ListOptions,
   type ServiceContext,
-} from "@pure-auth/core";
+} from "pure-auth";
 import { requireOrganizationMembership } from "@pure-auth/plugin-organization";
 import type { IamPluginStorage, RoleOrderBy } from "@/storage";
 import type { CreateRoleInput, Role, UpdateRoleInput } from "@/types";
