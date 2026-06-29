@@ -1,0 +1,44 @@
+{
+  "name": "@pure-auth/plugin-iam",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "type": "module",
+  "private": false,
+  "version": "0.1.0",
+  "description": "Role, permission, resource, and API-key IAM plugin for Pure Auth.",
+  "sideEffects": false,
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "clean": "rm -rf dist *.tgz",
+    "typecheck": "tsc --noEmit -p tsconfig.json",
+    "build": "bun run clean && tsc -p tsconfig.build.json && tsc-alias -p tsconfig.build.json --resolve-full-paths --resolve-full-extension .js",
+    "prepack": "bun run build",
+    "pack:dry": "bun run build && npm pack --dry-run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pure-auth/plugin-iam.git"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "tsc-alias": "^1.8.17",
+    "typescript": "^5.9.3"
+  },
+  "peerDependencies": {
+    "@pure-auth/core": "^0.1.0",
+    "@pure-auth/plugin-organization": "^0.1.0",
+    "typescript": "^5"
+  }
+}
